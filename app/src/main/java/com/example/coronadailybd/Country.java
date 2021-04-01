@@ -22,7 +22,7 @@ public class Country extends AppCompatActivity {
 
     CountryCodePicker ccp;
     Button button;
-    TextView textView,textView1,textView2,textView3;
+    TextView textView,textView1;
     ImageView imgi;
 
     @Override
