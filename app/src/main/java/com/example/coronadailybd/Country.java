@@ -66,7 +66,7 @@ public class Country extends AppCompatActivity {
         ccp.setDialogEventsListener(new CountryCodePicker.DialogEventsListener() {
             @Override
             public void onCcpDialogOpen(Dialog dialog) {
-                //your code
+
                 onCcpDialogCancel(dialog);
 
             }
@@ -95,28 +95,7 @@ public class Country extends AppCompatActivity {
 
 
 
-       /* CountryCurrencyButton button = (CountryCurrencyButton) findViewById(R.id.button);
-        button.setOnClickListener(new CountryCurrencyPickerListener() {
-            @Override
-            public void onSelectCountry(com.scrounger.countrycurrencypicker.library.Country country) {
-                if (country.getCurrency() == null) {
-                    Toast.makeText(Country.this,
-                            String.format("name: %s\ncode: %s",  country.getCode())
-                            , Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(Country.this,
-                            String.format("name: %s\ncurrencySymbol: %s", country.getName(), country.getCurrency().getSymbol())
-                            , Toast.LENGTH_SHORT).show();
-                }
-            }
 
-
-
-            @Override
-            public void onSelectCurrency(Currency currency) {
-
-            }
-        });*/
 
 
 

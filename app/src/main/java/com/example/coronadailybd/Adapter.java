@@ -25,7 +25,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.UserViewHolder> {
 
     private Context context;
     List<Data> userList;
-    // List<Data> filteredUserdataList;
+
 
 
     public Adapter(Context context, List<Data> userList) {
@@ -33,7 +33,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.UserViewHolder> {
         this.userList = userList;
 
 
-        //this.filteredUserdataList = userList;
+
 
 
     }
@@ -94,62 +94,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.UserViewHolder> {
         }
     }
 
-   /* public Filter getFilter(){
-
-        return new Filter() {
-            @Override
-            protected FilterResults performFiltering(CharSequence charSequence) {
-                String Key = charSequence.toString();
-                if (Key.isEmpty()){
-                    filteredUserdataList = userList;
-                }
-                else {
-
-                    List<Data> lstFiltered = new ArrayList<>();
-                    for (Data row: userList){
 
 
-
-                        String f = row.getDate();
-                        f = f.replaceAll("T.*", "");
-
-
-
-
-                        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-                        Date convertedDate = new Date();
-                        try {
-                            convertedDate = dateFormat.parse(f);
-                            SimpleDateFormat sdfnewformat = new SimpleDateFormat("MMM");
-                            String finalDateString = sdfnewformat.format(convertedDate);
-                            if(finalDateString.toLowerCase().contains(Key.toLowerCase())){
-                                *//*lstFiltered.clear();
-                                lstFiltered.add(row);*//*
-                                //Toast.makeText(Adapter.this,, Toast.LENGTH_LONG).show();
-                            }
-
-                        } catch (ParseException e) {
-                            e.printStackTrace();
-                        }
-
-
-                    }
-
-                    filteredUserdataList = lstFiltered;
-
-                }
-                FilterResults filterResults = new FilterResults();
-                filterResults.values = filteredUserdataList;
-                return filterResults;
-            }
-
-            @Override
-            protected void publishResults(CharSequence charSequence, FilterResults results) {
-
-                filteredUserdataList = (List<Data>) results.values;
-                notifyDataSetChanged();
-            }
-        };*/
-
-//}
 }
