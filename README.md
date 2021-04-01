@@ -8,3 +8,7 @@ features
 - information history
 - all countries
 
+
+copyright & developed by @ Md. Ashraful Islam
+github - https://github.com/MdAshrafulIslam1998
+
