@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     Button btn;
 
-   /*// EditText searchView;*/
+
     CharSequence search = "";
     Adapter adapterr;
 
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     String str;
 
     List<Data> l = new ArrayList<Data>();
-    //SearchView searchView;
+
 
 
 
@@ -122,13 +122,7 @@ public class MainActivity extends AppCompatActivity {
         textView9.setText(str);
 
 
-        /*Date todayDate = Calendar.getInstance().getTime();
 
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-        String todayString = ;
-*/
-
-       // getCalculatedDate("dd-MM-yyyy", -10);
 
 
 
@@ -145,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                List<Data> datas = response.body();
                for (Data data: datas){
 
-                  // String s = data.getDeaths().toString();
+
 
                    String content="";
                    content += data.getDeaths() + "\n\n";
@@ -157,8 +151,7 @@ public class MainActivity extends AppCompatActivity {
                    act.add(data.getActive().toString());
 
 
-                  // textView.setText(data.getDeaths().toString()+"\n");
-                   //textView.append(content);
+
 
                }
 
@@ -167,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                int small = Integer.parseInt(list.get(0));
 
                String total = String.valueOf(big-small);
-              // Toast.makeText(MainActivity.this,total, Toast.LENGTH_LONG).show();
+
                textView.setText(total);
                text.setText(getCalculatedDate("dd-MM-yyyy", -1));
 
@@ -193,30 +186,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        /*Date todayDate = Calendar.getInstance().getTime();
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-        String todayString = formatter.format(todayDate);*/
-        //textView.setText(d.toString());
+
 
         setRecyclerView();
-        /*editText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-                adapterr.getFilter().filter(s);
-                search = s;
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });*/
 
 
 
@@ -386,13 +359,7 @@ public class MainActivity extends AppCompatActivity {
         put("^\\d{1,2}\\s[a-z]{4,}\\s\\d{4}\\s\\d{1,2}:\\d{2}:\\d{2}$", "dd MMMM yyyy HH:mm:ss");
     }};
 
-    /**
-     * Determine SimpleDateFormat pattern matching with the given date string. Returns null if
-     * format is unknown. You can simply extend DateUtil with more formats if needed.
-     * @param dateString The date string to determine the SimpleDateFormat pattern for.
-     * @return The matching SimpleDateFormat pattern, or null if format is unknown.
-     * @see SimpleDateFormat
-     */
+
     public String determineDateFormat(String dateString) {
         for (String regexp : DATE_FORMAT_REGEXPS.keySet()) {
             if (dateString.toLowerCase().matches(regexp)) {
@@ -401,7 +368,7 @@ public class MainActivity extends AppCompatActivity {
                 return sf;
             }
         }
-        return null; // Unknown format.
+        return null;
     }
 
 

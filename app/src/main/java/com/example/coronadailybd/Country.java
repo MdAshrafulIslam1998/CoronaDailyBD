@@ -85,7 +85,7 @@ public class Country extends AppCompatActivity {
                 textView.setText("Country : " + ccp.getSelectedCountryName());
                 textView1.setText("Country Code : " + ccp.getSelectedCountryCode());
                 imgi.setImageResource(ccp.getSelectedCountryFlagResourceId());
-                //Toast.makeText(Country.this,String.valueOf(ccp.getSelectedCountryFlagResourceId()), Toast.LENGTH_LONG).show();
+
 
 
 
