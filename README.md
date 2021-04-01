@@ -8,7 +8,9 @@ features
 - information history
 - all countries
 
+# Developer
 
-copyright & developed by @ Md. Ashraful Islam
-github - https://github.com/MdAshrafulIslam1998
+- copyright & developed by @ Md. Ashraful Islam
+- github - https://github.com/MdAshrafulIslam1998
 
+![country](https://user-images.githubusercontent.com/81482212/113263400-88841d80-92f3-11eb-968f-9d30a05c3a90.jpg)
