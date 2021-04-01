@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn;
 
 
-    CharSequence search = "";
+    
     Adapter adapterr;
 
     EditText editText;
