@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
     
     Adapter adapterr;
 
+    //hfgjhgf
     EditText editText;
 
     ImageView imageView;
