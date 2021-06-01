@@ -26,7 +26,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.UserViewHolder> {
     private Context context;
     List<Data> userList;
 
-
+        // munna's codes here
 
     public Adapter(Context context, List<Data> userList) {
         this.context = context;
